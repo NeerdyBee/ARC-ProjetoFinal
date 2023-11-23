@@ -2,7 +2,7 @@
 
 # DOCUMENTAÇÃO: Projeto de rede empresarial, implantação e gerenciamento utilizando Linux, Vagrant e Docker.
 
-# AUTORES: Ramiro Vieira de Moura, Luis Gabriel Carrijo
+# AUTORES: Ramiro Vieira de Moura, Luis Gabriel Queiroz Carrijo
 
 #Introdução: O seguinte repositório tem como objetivo projetar, implementar e gerenciar uma rede empresarial utilizando Linux, com foco nos serviços essenciais como DHCP, DNS, Web, FTP, NFS, e virtualização utilizando Vagrant e Docker. Nossa infraestrutura pretende garantir a eficiência, escalabilidade e segurança para as operações de uma empresa.
 
@@ -71,19 +71,13 @@ $docker-compose --version
 
 
 
-# 5. Configuração dos serviços: (DHCP, DNS, Web, FTP, NFS.)
--DHCP
+# 5. Recursos de  dos serviços: (DHCP, DNS, Web, FTP, NFS.)
+-DHCP: https://hub.docker.com/r/networkboot/dhcpd
+-DNS: https://hub.docker.com/r/coredns/coredns
+-WEB: https://hub.docker.com/_/httpd 
+-FTP: https://hub.docker.com/r/bogem/ftp
+-NFS: https://hub.docker.com/r/itsthenetwork/nfs-server-alpine
 
--DNS
-
--WEB
-
--FTP
-
--NFS
-.
-.
-.
 
 # 6. Testes Extensivos de todos os serviços (utilizar prints)
 
@@ -92,20 +86,6 @@ Testes de resolução DNS.
 Transferência de arquivos via FTP.
 Acesso a aplicativos web internos.
 Testes de compartilhamento de arquivos via NFS.
-
-
-Descrever e documentar os resultados dos Testes unitários:
-
-.
-.
-.
-
-Descrever caso houver as Correções feitas e ajustes necessários: (Mencionando as versões dos testes, ex 1.0, 2.0)
-
-.
-.
-.
-
 
 # 7. Entrega final e possíveis Manutenções:
 
