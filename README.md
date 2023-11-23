@@ -144,12 +144,13 @@ bash
 selecione a pasta e abrindo com terminal e de um vagrant up.
 
 3. Após a criação das VMs, utilize o seguinte comando para se conectar a VM desejada.
-   
+
+Ex   
   vagrant ssh VM1
   vagrant ssh VM2
   vagrant ssg VM3
   
-3. Verifique a conectividade entre as VM1 e VM2 utilizando os endereços IP da rede
+3. Verifique a conectividade entre as VMs utilizando os endereços IP da rede
 privada.
 
 4. Verifique se as VMs tem conectividade com a Internet executando o comando ‘ping
