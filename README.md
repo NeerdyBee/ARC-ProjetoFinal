@@ -87,14 +87,9 @@ $docker-compose --version
 -FTP: https://hub.docker.com/r/bogem/ftp
 -NFS: https://hub.docker.com/r/itsthenetwork/nfs-server-alpine
 
-# 6. Testes Extensivos de todos os serviços (A FAZER)
-Verificação de conectividade em todas as sub-redes.
-Testes de resolução DNS.
-Transferência de arquivos via FTP.
-Acesso a aplicativos web internos.
-Testes de compartilhamento de arquivos via NFS.
 
-# 7. Instruções para seu Uso e Testes de serviços
+
+# 6. Instruções para seu Uso e Testes de serviços
    1. Clone o repositório em sua máquina.
    
    bash
@@ -114,4 +109,20 @@ Testes de compartilhamento de arquivos via NFS.
 
    5. Por fim, ao final da execução utilize o VirtualBox para Desligar e Excluir as máquinas virtuais que estão em execução, ou usando o Terminal digite os comando "vagrant halt" para encerrar ou "vagrant destroy".
 
+
+
+# 7. Testes Extensivos de todos os serviços (A FAZER)
+Verificação de conectividade em todas as sub-redes.
+Testes de resolução DNS.
+Transferência de arquivos via FTP.
+Acesso a aplicativos web internos.
+Testes de compartilhamento de arquivos via NFS.
+.
+.
+.
+
+
 # 8. Testes e possíveis Manutenções: (A FAZER)
+.
+.
+.
