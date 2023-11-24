@@ -22,7 +22,7 @@ Sub-rede para Contêineres Docker (ex: 192.168.3.0/24)
 - Sistema Operacional: Ubuntu Server 20.04 LTS
 - Interface de Rede 1 (eth0): IP Privado Estático (192.168.1.10)
 - Funções:
-- - Servidor DHCP;
+  - Servidor DHCP;
   - Servidor DNS;
   - Servidor WEB (Apache);
   - Servidor FTP
@@ -45,13 +45,13 @@ Sub-rede para Contêineres Docker (ex: 192.168.3.0/24)
 
 # 4. Configuração e instalação dos recursos necessários (abra o terminal Linux e digite os comandos para instalação dos recursos)
 
-.Instalação Vagrant (utilizado para criar Scripts para então criação das máquinas virtuais de acordo com as especificações desejadas.)
+- Instalação Vagrant (utilizado para criar Scripts para então criação das máquinas virtuais de acordo com as especificações desejadas.)
 Digite:
 
 $sudo apt update
 $sudo apt install vagrant -y
 
-.Instalação Docker (utilizado para construir imagens e composição de containers)
+- Instalação Docker (utilizado para construir imagens e composição de containers)
 
 $sudo apt update
 
@@ -64,7 +64,7 @@ $sudo apt update
 
 $sudo apt install docker-ce docker-ce-cli containerd.io -y
 
-.Docker Compose (utilizado para realizar a comunicação entre os contêineres.)
+- Docker Compose (utilizado para realizar a comunicação entre os contêineres.)
 
 $sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
