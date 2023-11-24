@@ -16,7 +16,7 @@ Sub-rede para Servidores (ex: 192.168.1.0/24)
 Sub-rede para Máquinas Virtuais (ex: 192.168.2.0/24)
 Sub-rede para Contêineres Docker (ex: 192.168.3.0/24)
 
-# As três VMs devem ser configuradas da seguinte forma:
+# As configurações das VMs:
 
 1. VM1 - Servidor de Serviços
 - Sistema Operacional: Ubuntu Server 20.04 LTS
