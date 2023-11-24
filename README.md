@@ -108,22 +108,4 @@ Ex.:
 
 5. Por fim, ao final da execução utilize o VirtualBox para Desligar e Excluir as máquinas virtuais que estão em execução, ou usando o Terminal digite os comando "vagrant halt" para encerrar ou "vagrant destroy".
 
-# 8. Entrega final e possíveis Manutenções:
-
-Entrega Final:
-
-.
-.
-.
-
-Arquivos de configuração, scripts e documentação.
-Instruções claras para reproduzir a configuração desde a instalação dos programas necessários para execução.
-
-Manutenção Prevista:
-
-.
-.
-.
-
-Procedimentos de manutenção e atualização.
-Projetos com uma infraestrutura de rede robusta e altamente escalável, utilizando tecnologias Linux, Vagrant e Docker. Necessitam de uma documentação abrangente que garantirá a compreensão e a replicabilidade do ambiente implementado.
+# 8. Testes e possíveis Manutenções:
