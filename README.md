@@ -16,7 +16,7 @@ Sub-rede para Servidores (ex: 192.168.1.0/24)
 Sub-rede para Máquinas Virtuais (ex: 192.168.2.0/24)
 Sub-rede para Contêineres Docker (ex: 192.168.3.0/24)
 
-# 3. Pré-requisitos de instação:
+# 3. Pré-requisitos de instalação:
 
 - DHCP (Dynamic Host Configuration Protocol): Será utilizado um servidor DHCP para atribuirmos a dinâmica de endereços IP nas sub-redes.
 
@@ -87,7 +87,28 @@ Transferência de arquivos via FTP.
 Acesso a aplicativos web internos.
 Testes de compartilhamento de arquivos via NFS.
 
-# 7. Entrega final e possíveis Manutenções:
+# 7. Instruções para seu Uso e Testes de serviços
+
+1. Clone o repositório em sua máquina.
+   
+bash
+  git clone <URL-do-repositório>
+  cd <nome-do-diretório-clonado>
+  
+2. Inicie as máquinas virtuais usando o Vagrant. Selecione a pasta e abrindo com terminal e execute o comando "vagrant up".
+
+3. Confirme sua iniciação utilizando o comando "vagrant status".
+
+4. Após a criação das VMs, utilize o seguinte comando para se conectar a VM desejada.
+
+Ex.:
+  vagrant ssh <Nome_da_VM>
+  
+4. Verifique a conectividade entre as VMs utilizando os endereços IP da rede privada.
+
+5. Por fim, ao final da execução utilize o VirtualBox para Desligar e Excluir as máquinas virtuais que estão em execução, ou usando o Terminal digite os comando "vagrant halt" para encerrar ou "vagrant destroy".
+
+# 8. Entrega final e possíveis Manutenções:
 
 Entrega Final:
 
@@ -106,43 +127,3 @@ Manutenção Prevista:
 
 Procedimentos de manutenção e atualização.
 Projetos com uma infraestrutura de rede robusta e altamente escalável, utilizando tecnologias Linux, Vagrant e Docker. Necessitam de uma documentação abrangente que garantirá a compreensão e a replicabilidade do ambiente implementado.
-
-
-
-
-
-
-## Instruções para seu Uso e Testes de serviços (AINDA NÃO DEFINIDO AS VMS)
-
-1. Clone o repositório “Nomedorepositorio” em sua máquina.
-   
-bash
-  git clone <URL-do-repositório>
-  cd <nome-do-diretório-clonado>
-  
-2. Inicie as máquinas virtuais usando o Vagrant.
-selecione a pasta e abrindo com terminal e de um vagrant up.
-
-3. Após a criação das VMs, utilize o seguinte comando para se conectar a VM desejada.
-
-Ex   
-  vagrant ssh VM1
-  vagrant ssh VM2
-  vagrant ssg VM3
-  
-3. Verifique a conectividade entre as VMs utilizando os endereços IP da rede
-privada.
-
-4. Verifique se as VMs tem conectividade com a Internet executando o comando ‘ping
-google.com’ dentro de uma delas.
-
-5. Teste os serviços (Apache, MySQL) nas VMs para garantir que estão funcionando
-de acordo.
-
-  - Para testar o Apache: Exemplo curl http://192.168.56.10
-
-  - Para testar o MySQL VM2: Exemplo telnet 192.168.56.11 3306
-
-8. Por fim, ao final da execução utilize o VirtualBox para Desligar e Excluir as máquinas virtuais que estão em execução.
-
-
