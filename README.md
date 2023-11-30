@@ -122,31 +122,31 @@ Guia para Testes
 
 1. Testes de Conectividade:
 
-Ping:
+- Ping:
 VM1: ping 192.168.2.10 para verificar a conectividade com VM2.
 VM2: ping 192.168.1.10 para verificar a conectividade com VM1.
 
-SSH:
+- SSH:
 Acesse VM1 de VM2: ssh 192.168.1.10
 Acesse VM2 de VM1: ssh 192.168.2.10
 
 2. Testes de Serviços:
 
-DHCP: 
+- DHCP: 
 Em VM2, verifique se o IP foi atribuído automaticamente pela VM1.
 
-DNS: 
+- DNS: 
 Em ambas as VMs, use nslookup ou dig para resolver nomes de domínio. Ex: “nslookup google.com”
 
-Apache (VM1):
+- Apache (VM1):
 Acesse o servidor web de VM2: curl http://192.168.1.10
 Coloque um arquivo na pasta compartilhada /var/www/html e verifique se é acessível.
 
-FTP (VM1):
+- FTP (VM1):
 Em VM2, tente conectar via FTP: ftp 192.168.1.10
 Faça upload ou download de um arquivo.
 
-NFS (VM1):
+- NFS (VM1):
 Em VM2, monte o compartilhamento NFS: sudo mount -t nfs 192.168.1.10:/vagrant/html /mnt/html
 Verifique se pode acessar os arquivos no compartilhamento.
 
