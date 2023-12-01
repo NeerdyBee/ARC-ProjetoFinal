@@ -23,7 +23,7 @@ Vagrant.configure("2") do |config|
         vm1.vm.provision "shell",inline: <<-SHELL 
             sudo apt update
             sudo apt install docker.io -y
-            docker run -d --name containerWEB -v /dirCompartilhado:/usr/local/apache2/htdocs/ -p 80:80 httpd
+            docker run -d --name containerWEB -v /dirCompartilhado:/usr/local/apache2/htdocs/ -p 80:80 httpd # Pronto
             docker run -d --name containerDNS -v /dirCompartilhado:/etc/bind/named.conf -p 81:53 ubuntu/bind9
             docker run -d --name containerNFS -v /dirCompartilhado:/nfsshare -p 82:2049 itsthenetwork/nfs-server-alpine
             docker run -d --name containerFTP -v /dirCompartilhado:/home/vsftpd -p 83: ustclug/ftp

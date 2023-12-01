@@ -82,9 +82,9 @@ $docker-compose --version
 
 # 5. Recursos de  dos serviços: (DHCP, DNS, Web, FTP, NFS.)
 -DHCP: https://hub.docker.com/r/networkboot/dhcpd
--DNS: https://hub.docker.com/r/coredns/coredns
+-DNS: https://hub.docker.com/r/ubuntu/bind9
 -WEB: https://hub.docker.com/_/httpd 
--FTP: https://hub.docker.com/r/bogem/ftp
+-FTP: https://hub.docker.com/r/ustclug/ftp
 -NFS: https://hub.docker.com/r/itsthenetwork/nfs-server-alpine
 
 
